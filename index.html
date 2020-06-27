@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBookList</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- =============================-->
+    <header>
+      <h1>MyBookList</h1>
+    </header>
+
+    <!-- Validation -->
+    <!-- ============================== -->
+    <div id="valid">
+      <!-- <div class="validation  validation-success">
+        <h4>Validation Text</h4>
+      </div> -->
+    </div>
+
+    <!-- Input Data of Books -->
+    <!-- =================================== -->
+    <main>
+      <form>
+        <label for="title">Book Title</label>
+        <input type="text" id="title" />
+        <label for="author">Book Author</label>
+        <input type="text" id="author" />
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" />
+        <input type="submit" value="Add Book" id="add-btn" />
+      </form>
+    </main>
+
+    <!-- Display The Books -->
+    <!-- ====================================== -->
+    <div class="display">
+      <table class="display-head">
+        <thead>
+          <tr>
+            <td>Book Title</td>
+            <td>Book Auther</td>
+            <td>ISBN</td>
+            <td></td>
+          </tr>
+        </thead>
+      </table>
+      <!--  -->
+      <table class="display-body">
+        <tbody>
+          <!-- <tr>
+              <td>maths</td>
+              <td>john doe</td>
+              <td>34r569</td>
+              <td><i class="fa fa-trash"></i></td>
+            </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

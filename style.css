@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lobster&display=swap");
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Lobster', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fdffe8;
+}
+
+.validation,
+main,
+.display {
+  width: 85%;
+  max-width: 500px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+header {
+  width: 100%;
+  max-width: 850px;
+}
+
+i {
+  cursor: pointer;
+}
+/* Header */
+/* ============================ */
+
+header {
+  background-color: #4882fd;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  /* border-radius: 0 0 5px 5px; */
+}
+header h1 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Validation */
+/* ================================== */
+.validation {
+  margin: 8px auto;
+  border-radius: 5px;
+}
+.validation h4 {
+  padding: 5px;
+  text-align: center;
+}
+.validation-success {
+  background-color: #7de07d;
+  color: #0b550b;
+}
+.validation-reject {
+  background-color: #f8c5c5;
+  color: #ff0000;
+}
+
+/* Main Input Content */
+/* ================================== */
+main {
+  padding: 20px;
+  margin: 10px auto;
+  background-color: #e0eafd;
+  border-radius: 5px;
+}
+
+main form {
+  display: grid;
+  color: #4882fd;
+  font-weight: bold;
+}
+
+main form label,
+main form #add-btn {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+main form input[type="text"] {
+  padding: 5px;
+  outline: none;
+  border-style: none;
+  border-radius: 5px;
+}
+
+main form input[type="text"]:hover,
+main form input[type="text"]:active {
+  border: 2px solid #4882fd;
+}
+
+main form #add-btn {
+  color: white;
+  background-color: #4882fd;
+  outline: none;
+  padding: 2px;
+  border: 2px solid #4882fd;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+main form #add-btn:hover,
+main form #add-btn:active {
+  background-color: #1058f1;
+  border: 2px solid #1058f1;
+  cursor: pointer;
+}
+
+/* Display Books */
+/* =========================== */
+
+.display {
+  margin: 15px auto;
+  background-color: #e0eafd;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.display td {
+  padding: 4px 1px;
+  line-height: 1.2rem;
+}
+.display-head,
+.display-body {
+  background-color: #4882fd;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  margin: 7px auto;
+}
+
+.display-body {
+  /* color: #4882fd; */
+  background-color: #e0eafd;
+}
+
+.display-head tr,
+.display-body tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.display-body tr {
+  margin: 6px auto;
+  color: #4882fd;
+  background-color: #ffffff;
+}

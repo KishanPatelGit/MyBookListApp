@@ -70,14 +70,12 @@ class Storage {
   // ========================
   static removeFromStorage(isbn) {
     const books = Storage.getFromStorage();
-    // console.log(isbn);
-    console.log(books);
+
     books.forEach(function (book, index) {
-      // console.log(book);
       if (isbn == book.isbn) {
         books.splice(index, 1);
       }
-      // console.log(mybooks);
+
       localStorage.setItem("books", JSON.stringify(books));
     });
   }
